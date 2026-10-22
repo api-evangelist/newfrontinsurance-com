@@ -1,0 +1,70 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 2
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.newfront.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: newfront.com
+  role: api
+  relation: other-domain
+- host: api.newfrontinsurance.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: newfrontinsurance.com
+  role: api
+  relation: own
+- host: newfrontinsurance.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - hosting
+  vendor: vercel
+  registrable_domain: newfrontinsurance.com
+  role: website
+  relation: own
+- host: www.newfront.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: newfront.com
+  role: other
+  relation: other-domain
+- host: www.newfront.com:443
+  found_by:
+  - pointer
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - Leadership
+  - Blog
+  serves: []
+  registrable_domain: newfront.com:443
+  role: marketing
+  relation: other-domain

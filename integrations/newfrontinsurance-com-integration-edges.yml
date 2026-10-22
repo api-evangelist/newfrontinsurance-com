@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/newfrontinsurance-com/integrations
+- https://zapier.com/apps/newfrontinsurance/integrations
+- https://zapier.com/apps/newfront/integrations
+- https://n8n.io/integrations/newfrontinsurance-com/
+- https://n8n.io/integrations/newfrontinsurance/
+- https://composio.dev/toolkits/newfrontinsurance-com
+- https://monid.ai/tools/newfrontinsurance-com
+checked:
+- https://composio.dev/toolkits/newfrontinsurance-com
+- https://monid.ai/tools/newfrontinsurance-com
+- https://n8n.io/integrations/newfrontinsurance-com/
+- https://n8n.io/integrations/newfrontinsurance/
+- https://zapier.com/apps/newfront/integrations
+- https://zapier.com/apps/newfrontinsurance-com/integrations
+- https://zapier.com/apps/newfrontinsurance/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,25 +1,80 @@
 aid: newfrontinsurance-com
+
 name: Newfront
-description: 'Newfront is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by index-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://images.ctfassets.net/m4mgwg0yt3ze/3JS4MPJdhYBdAe232VGAbN/bae91f28f9bd72939808783d0d71a8f7/share-image-v2.jpg
+
+description: 'Newfront is a modern business insurance and benefits brokerage that offers a range of insurance products, total rewards solutions, and retirement services. It combines a technology‑native approach with the global expertise of its parent company WTW to serve clients across various industries. The firm provides digital tools for onboarding, data‑driven placement, and continuous service through a secure platform.'
+
 url: https://raw.githubusercontent.com/api-evangelist/newfrontinsurance-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
-- Company
-apis: []
+- Business Insurance
+- Benefits Brokerage
+- Total Rewards
+- Retirement Services
+- Technology
+- Risk Management
+- WTW
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- index-ventures
+
 common:
+- type: Hosts
+  url: hosts/newfrontinsurance-com-hosts.yml
+- type: Vendors
+  url: vendors/newfrontinsurance-com-vendors.yml
+- type: TermsOfService
+  url: https://www.newfront.com:443/terms
+- type: PrivacyPolicy
+  url: https://www.newfront.com:443/privacy
+- type: Newsroom
+  url: https://www.newfront.com:443/news
+- type: Leadership
+  url: https://www.newfront.com:443/leadership
+- type: Blog
+  url: https://www.newfront.com:443/blog
+- type: DomainSecurity
+  url: security/newfrontinsurance-com-domain-security.yml
 - type: Website
   url: http://newfrontinsurance.com
+
+apis: []
+
+x-backed-by:
+- index-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: http://newfrontinsurance.com
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
